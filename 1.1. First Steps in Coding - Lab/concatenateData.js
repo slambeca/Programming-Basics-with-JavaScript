@@ -9,3 +9,9 @@ function concatenateData(input) {
 }
 
 concatenateData(["Borislav", "Ivanov", 20, "Sofia"]);
+
+// Variant 2
+function concatenateData(input) {
+    console.log(`You are ${input[0]} ${input[1]}, a ${Number(input[2])}-years old person from ${input[3]}.`);
+
+concatenateData(["Borislav", "Ivanov", 20, "Sofia"]);
