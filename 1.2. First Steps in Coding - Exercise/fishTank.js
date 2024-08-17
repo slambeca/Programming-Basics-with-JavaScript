@@ -16,3 +16,14 @@ function fishTank(input) {
 
 fishTank(["85", "75", "47", "17"]);
 fishTank(["105", "77", "89", "18.5"]);
+
+// Variant 2
+function fishTank(input) {
+    const [tankLength, tankWidth, tankHeight, percent] = input.map(Number);
+    const realLiters = tankLength * tankWidth * tankHeight * 0.001 * (1 - percent / 100);
+    
+    console.log(realLiters);
+}
+
+fishTank(["85", "75", "47", "17"]);
+fishTank(["105", "77", "89", "18.5"]);
